@@ -1,0 +1,576 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif; 
+    line-height: 1.6;
+    color: #333;
+    background-color: #F9F9F9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header and Navigation */
+ header {    
+    background-color:#F9F9F9 ;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-weight: 500;
+    color: #555;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; 
+}
+
+/* Hero Section */
+ #hero {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem 0;
+} 
+
+#hero-content {
+    flex: 1 1 550px; 
+    min-width: 320px; 
+    text-align: left;
+    background-color: #fff;
+    padding: 3.5rem; 
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+}
+
+#hero-content h1 {
+    font-size: 4.2rem; 
+    color: #333;
+    margin-bottom: 0.8rem; 
+    line-height: 1.1; 
+    font-weight: 700; 
+}
+
+#hero-content h2 {
+    font-size: 1.4rem; 
+    color: #555;
+    margin-bottom: 0.5rem; 
+    font-weight: 500;
+}
+
+#hero-content p {
+    font-size: 1.1rem; 
+    color: #666;
+}
+
+#hero-content a { 
+    background-color: #4CAF50; 
+    color: #fff;
+    border: 2px solid #4CAF50;
+} 
+
+#hero-content a:hover {
+    background-color: #388E3C;
+    border-color: #388E3C;
+}
+
+
+#image {
+    flex: 1 1 450px; 
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    
+}
+
+#image img {
+    max-width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 10px solid #FFC107; 
+}
+
+/* Main Content Sections */
+main {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* About Me Section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    background-color: #E8F5E9; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+#about figure {
+    position: relative; 
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about figure img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+#about .label {
+    background-color: #FFC107; 
+    color: #333;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    position: absolute;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+#about .label:nth-of-type(1) {
+    top: 5%; 
+    left: 15%; 
+    transform: rotate(-5deg); 
+}
+
+#about .label:nth-of-type(2) {
+    top: 30%; 
+    left: -5%; 
+    transform: rotate(2deg); 
+}
+
+#about .label:nth-of-type(3) {
+    bottom: 5%; 
+    left: 20%; 
+    transform: rotate(10deg); 
+}
+
+#about .label:nth-of-type(4) {
+    bottom: 20%; 
+    right: 10%; 
+    transform: rotate(-3deg); 
+
+}
+#about h2 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#about ul li {
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#about ul li strong {
+    display: block;
+    font-size: 2rem;
+    color: #4CAF50;
+    font-weight: 700;
+}
+
+#about ul li p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
+#about a[download] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#about a[download]:hover {
+    background-color: #388E3C;
+}
+
+#about img[alt="Faith Nyambura signature"] {
+    max-width: 150px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Interests Section */
+#interests ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+#interests ul li {
+    background-color: #F0F4C3; 
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #444;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Projects Section */
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+#projects ul li {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+#projects ul li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+#projects ul li h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+#projects ul li p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+#projects ul li a {
+    background-color: #FFC107; 
+    color: #333;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#projects ul li a:hover {
+    background-color: #FFA000;
+}
+
+#testimonials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+#testimonials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#testimonials li {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1; 
+}
+
+#testimonials .stars {
+    color: #FFD700; 
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#testimonials blockquote {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+#testimonials figure {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#testimonials figure img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+#testimonials figcaption {
+    font-size: 14px;
+    color: #555;
+}
+
+#testimonials figcaption strong {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+ 
+
+/* Footer  */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+footer #contact {
+    flex: 1.5;
+    min-width: 280px;
+    text-align: left;
+    background-color: #444; 
+    padding: 2.5rem; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer #contact h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer #contact p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+footer #contact a {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #FFC107;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+footer #contact a:hover {
+    color: #FFC107;
+}
+
+footer #contact nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+footer #contact nav ul li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Contact Form  */
+form {
+    background-color: #444;
+    padding: 2.5rem;
+    border-radius: 10px;
+    flex: 1.5;
+    min-width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    font-size: 0.95rem;
+    color: #333;
+    background-color:  #fff;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button[type="submit"] {
+    background-color: #FFC107;
+    color: #333;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+form button[type="submit"]:hover {
+    background-color: #FFA000;
+}
+
+footer > p {
+    flex-basis: 100%;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 5%;
+    }
+
+    footer #contact,
+    form {
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer #contact h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    footer #contact nav ul {
+        justify-content: center;
+    }
+
+    form button[type="submit"] {
+        align-self: center;
+    }
+}
+
