@@ -1,7 +1,7 @@
-Personal Portfolio Website
+# Personal Portfolio Website
 This repository hosts my personal portfolio, developed as a submission for the PLP Academy Portfolio Building Hackathon. It serves as a comprehensive showcase of my technical proficiencies, academic journey, and accomplished projects, presented through a polished and contemporary design.
 
-Core Sections
+**Core Sections**
 About Me: A concise introduction highlighting my professional drive and core motivations.
 
 Testimonials from my clients: Information on how working with me has been.
@@ -12,13 +12,15 @@ Project Showcase: A curated collection of my key projects, each featuring a conc
 
 Contact Information: A dedicated section facilitating easy communication for potential collaborations or employment opportunities.
 
-Technical Foundation
+**Technical Foundation**
 HTML5: Utilized for robust and semantic document structuring.
 
 CSS3: Employed for comprehensive styling and responsive layout implementation.
 
-Local Deployment
-To launch this project locally, simply open the index.html file in your preferred web browser.
+**Local Deployment**
+To launch this project locally, simply open the index.html file in your preferred web browser eg Chrome, Firefox, etc.
 
-Repository Access
-This project's source code is publicly available on GitHub: 
+**Repository Access**
+This project's source code is publicly available on GitHub.
+
+This is the netlify link to my portfolio: https://friendly-smakager-da6a8c.netlify.app/
