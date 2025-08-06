@@ -1,3 +1,4 @@
+/* General */
 
 * {
     box-sizing: border-box;
@@ -126,7 +127,7 @@ nav ul li a:hover {
     border: 10px solid #FFC107; 
 }
 
-/* Main Content Sections */
+/* Main Content Section */
 main {
     padding: 3rem 5%;
     max-width: 1200px;
